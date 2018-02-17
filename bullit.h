@@ -58,7 +58,7 @@ inline int litmin(int x, int y)
 }
 
 inline int signum(int x)
-// Get the sign of x.
+// Get the sign of x without branching.
 {
  return (x > 0) - (x < 0);
 }
