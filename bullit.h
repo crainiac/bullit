@@ -24,7 +24,7 @@
 inline int nextpow2(int x)
 // Get the smallest nonzero integer power of 2 that's not smaller than x.
 {
- return (unsigned int)(INT_MIN) >> (__builtin_clz(x) - (x & (x - 1) || x <=0));
+ return (unsigned int)(INT_MIN) >> (__builtin_clz(x) - (x & (x - 1) || x <= 0));
 }
 
 inline int floorlg(int x)
@@ -40,7 +40,7 @@ inline unsigned int litabs(int x)
 }
 
 inline int litave(int x, int y)
-// Get the average of x and y without arithmetic overflow, rounded toward zero.
+// Get the average of x and y without arithmetic overflow, rounded down.
 {
  return (x & y) + ((x ^ y) >> 1);
 }
