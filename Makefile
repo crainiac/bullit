@@ -1,5 +1,5 @@
 CC=gcc
-CFLAGS=-Ofast -march=native
+CFLAGS=-Ofast -march=native -flto
 bullit: main.c
 	$(CC) $(CFLAGS) -o testfire main.c bullit.c	
 .PHONY: clean
